@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+
+set -eo pipefail
+MUSIC_DIR="$HOME/Music/untagged"
+mkdir -p $MUSIC_DIR
+ 
+youtube-dl -v -a batch.txt
