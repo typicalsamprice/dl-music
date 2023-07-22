@@ -33,7 +33,7 @@ fn vorbis_edit_file(filename: &str) {
 
     let (mut artist, mut title) = vorbis.unwrap_or(("unknown".to_owned(), "unknown".to_owned()));
     print!(
-        "Would you like to change the filename?Current name:{}\nCurrent artist: {}\nCurrent title: {}\n[y/N]: ",
+        "Would you like to change the filename?\nCurrent filename:{}\nCurrent artist: {}\nCurrent title: {}\n[y/N]: ",
         purported_filename, artist, title
     );
     io::stdout().flush().unwrap();
