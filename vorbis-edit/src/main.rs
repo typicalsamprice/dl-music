@@ -99,4 +99,5 @@ fn vorbis_edit_file(filename: &str) {
         .arg("-w")
         .arg(&file_name);
     vorbiscomment.output().unwrap();
+    Command::new("rm").arg("-f").arg(TEMPFILE).output().unwrap();
 }
