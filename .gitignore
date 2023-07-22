@@ -1,1 +1,3 @@
-vorbis-comment/target
+vorbis-edit/target
+# This is simply the file I place songs in before they get downloaded
+batch.txt
